@@ -1,0 +1,25 @@
+{
+  "name": "sand-socket",
+  "version": "0.1.0",
+  "description": "Sand is a lightweight implementation of net tcp socket.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccadori/sand-socket.git"
+  },
+  "keywords": [
+    "socket",
+    "unity",
+    "node",
+    "tcp"
+  ],
+  "author": "Carlos Cadori",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ccadori/sand-socket/issues"
+  },
+  "homepage": "https://github.com/ccadori/sand-socket#readme"
+}
