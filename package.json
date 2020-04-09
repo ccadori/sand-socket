@@ -1,6 +1,6 @@
 {
   "name": "sand-socket",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Sand is a lightweight implementation of net tcp socket.",
   "main": "index.js",
   "scripts": {
