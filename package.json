@@ -21,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/ccadori/sand-socket/issues"
   },
-  "homepage": "https://github.com/ccadori/sand-socket#readme"
+  "homepage": "https://github.com/ccadori/sand-socket#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "uuid": "^7.0.3"
+  }
 }
