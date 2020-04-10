@@ -4,7 +4,7 @@ const events = require('events');
 describe("Reader", () => {
   it("Should emit two events when receive a text with two messages", async () => {
     const mockedStream = new events();
-    const reader = new Reader(mockedStream);
+    const reader = new Reader(mockedStream, "\n");
     const messages = [];
 
     reader.on("read", (data) => messages.push(data));
@@ -16,7 +16,7 @@ describe("Reader", () => {
 
   it("Should only emit the event when the message is fully received", async () => {
     const mockedStream = new events();
-    const reader = new Reader(mockedStream);
+    const reader = new Reader(mockedStream, "\n");
     const messages = [];
 
     reader.on("read", (data) => messages.push(data));
@@ -32,7 +32,7 @@ describe("Reader", () => {
 
   it ("Should kept an incomplete message in the buffer", async () => {
     const mockedStream = new events();
-    const reader = new Reader(mockedStream);
+    const reader = new Reader(mockedStream, "\n");
     const messages = [];
 
     reader.on("read", (data) => messages.push(data));
