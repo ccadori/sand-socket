@@ -48,7 +48,7 @@ server.listen(3000);
 ```
 
 ## Delimiters
-Sand socket packets are text oriented, by default it just send a string to the client using "\n" as the delimiter
+Sand packets are text-oriented, by default it just sends a string to the client using "\n" as the delimiter
 between packets, and "#e#" as the delimiter between event name and message. 
 If you prefer, you can set any other delimiter by passing it to the socket constructor.
 
@@ -62,10 +62,13 @@ const server = new SandSocket(packetDelimiter, eventDelimiter);
 ```
 
 ## Concerns
-Sand socket performance was not enough tested yet, and as long as it is a TCP socket and is text-based, it may not be 
+The performance was not enough tested yet, and as long as it is a TCP socket and is text-based, it may not be 
 the best option for an application that requires a lot of packets per second, like an action game.
 
 ## Roadmap
 - Make logs optional.
 - Find a more performatic way to separate event and message.
 - Create the concept of rooms, in order to not store all the clients together.
+
+These are what I'm planning to implement in the short-term, in case you have a suggestion feel free to contact me 
+or open an issue :)
