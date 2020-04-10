@@ -1,3 +1,7 @@
+[![Dependency Status](https://david-dm.org/ccadori/sand-socket.svg)](https://david-dm.org/ccadori/sand-socket)
+[![devDependency Status](https://david-dm.org/ccadori/sand-socket/dev-status.svg)](https://david-dm.org/ccadori/sand-socket?type=dev)
+[![NPM version](https://badge.fury.io/js/sand-socket.svg)](https://www.npmjs.com/package/sand-socket)
+
 ## Sand
 
 Sand is a very simple and lightweight implementation of the core node TCP socket, adding some usefull features like client 
