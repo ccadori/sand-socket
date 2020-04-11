@@ -61,6 +61,15 @@ const eventDelimiter = "eventNameEndsHere";
 const server = new SandSocket(packetDelimiter, eventDelimiter);
 ```
 
+## Verbose logging
+In case you want to see what is happening behind the scenes, just activate the verbose log.
+
+```javascript
+const SandSocket = require('sand-socket');
+const server = new SandSocket();
+server.verboseLog = true;
+```
+
 ## Concerns
 The performance was not enough tested yet, and as long as it is a TCP socket and is text-based, it may not be 
 the best option for an application that requires a lot of packets per second, like an action game.
