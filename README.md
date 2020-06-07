@@ -47,6 +47,16 @@ server.on('connected', async (client) => {
 server.listen(3000);
 ```
 
+## Server options
+You can set options to the node server setting the serverOptions parameter in the Sand server options when creating it.
+
+```javascript
+const SandSocket = require('sand-socket');
+
+const options = {};
+const server = new SandSocket({ serverOptions: options });
+```
+
 ## Delimiters
 Sand packets are text-oriented, by default it just sends a string to the client using "\n" as the delimiter
 between packets, and "#e#" as the delimiter between event name and message. 
@@ -58,7 +68,22 @@ const SandSocket = require('sand-socket');
 const packetDelimiter = "packetEndsHere";
 const eventDelimiter = "eventNameEndsHere";
 
-const server = new SandSocket(packetDelimiter, eventDelimiter);
+const server = new SandSocket(null, packetDelimiter, eventDelimiter);
+```
+
+## TLS
+Sand socket supports node core TLS implementation.
+
+```javascript
+const fs = require("fs");
+const SandSocket = require('sand-socket');
+
+const options = { 
+  key: fs.readFileSync("./path-to-key"),
+  cert: fs.readFileSync("./path-to-cert")
+};
+
+const server = new SandSocket({ tls: true, serverOptions: options });
 ```
 
 ## Verbose logging
