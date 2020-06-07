@@ -100,9 +100,8 @@ The performance was not enough tested yet, and as long as it is a TCP socket and
 the best option for an application that requires a lot of packets per second, like an action game.
 
 ## Roadmap
-- Make logs optional.
+- Make logs optional. (Done)
 - Find a more performatic way to separate event and message.
-- Create the concept of rooms, in order to not store all the clients together.
 
 These are what I'm planning to implement in the short-term, in case you have a suggestion feel free to contact me 
 or open an issue :)
